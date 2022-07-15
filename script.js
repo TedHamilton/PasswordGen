@@ -7,5 +7,18 @@ const symbolsEl = document.getElementById('symbols');
 const btnEl = document.getElementById('button');
 
 const randomFunc = {
-    lower
+    lower: getRandomLower,
+    upper: getRandomUpper,
+    number: getRandomNumber,
+    symbol: getRandomSymbol
 }
+
+generate.addEventListener('click', () => {
+    const length = +lengthEl.value;
+    const hasLower = lowercaseEl.checked;
+    const hasUpper = uppercaseEl.checked;
+    const hasNumber = numbersEl.checked;
+    const hasSymbol = symolsEl.checked;
+
+    resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
+});
