@@ -22,3 +22,16 @@ generate.addEventListener('click', () => {
 
     resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 });
+
+function generatePassword(lower, upper, number, symbol, length) {
+    let generatePassword = '';
+    const typesCount = lower + upper + number + symbol;
+    const typesArr = [{lower}, {upper}, {number}, {symbol}].filter(items => Object.values(item)[0]);
+
+    if(typesCount === 0) {
+        return '';
+    }
+
+    for(let i=0; i<length; i+=typesCount) {}
+
+}
