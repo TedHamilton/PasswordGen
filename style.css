@@ -5,8 +5,8 @@
 
 .body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #e8ccd7;
-    color: #ab274f;
+    background-color: lightseagreen;
+    color: black;
 }
 .content-wrap{
    text-align: center;
@@ -15,7 +15,7 @@
 .generator-box{
     margin-top: 30px;
     display: inline-block;
-    border: 2px solid #ef98aa;
+    border: 2px solid lightseagreen;
     padding: 15px;
     padding-left: 30%;
     padding-right: 30%;
@@ -28,4 +28,4 @@
 }
 textarea{
     min-width: 100px;
-}
+} 
